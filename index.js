@@ -2,7 +2,7 @@ import app from "./server.js";
 //import mongoose from "mongoose";
 import dotenv from "dotenv";
 import mongodb from "mongodb"
-import accountsDAO from "../auth/dao/accountsDAO.js";
+import accountsDAO from "./dao/accountsDAO.js";
 
 dotenv.config();
 
