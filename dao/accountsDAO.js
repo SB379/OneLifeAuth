@@ -1,6 +1,3 @@
-import mongodb from "mongodb"
-const ObjectId = mongodb.ObjectID
-
 let accounts
 
 export default class accountsDAO {
