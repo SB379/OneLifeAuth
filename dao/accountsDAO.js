@@ -19,11 +19,11 @@ export default class accountsDAO {
     {
         try {
 
-            // if(await accounts.findOne(email))
-            // {
-            //     console.log("Email already exists")
-            //     return;
-            // }
+            if(await accounts.findOne({email: email}) !== null)
+            {
+                console.log("Email already exists")
+                return;
+            }
 
             const accountDoc = {
                 email: email,
